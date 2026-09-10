@@ -16,6 +16,7 @@ if (form) {
         const name = document.getElementById("name").value.trim();
         const email = document.getElementById("email").value.trim();
         const phone = document.getElementById("phone").value.trim();
+        const contactMethod = document.getElementById("contact-method").value;
         const serviceSelect = document.getElementById("service");
         const service = serviceSelect.options[serviceSelect.selectedIndex].text;
         const message = document.getElementById("message").value.trim();
@@ -39,12 +40,13 @@ if (form) {
                         "Prefer": "return=minimal"
                     },
                     body: JSON.stringify({
-                        full_name: name,
-                        email: email,
-                        phone: phone,
-                        service: service,
-                        message: message
-                    })
+    full_name: name,
+    email: email,
+    phone: phone,
+    contact_method: contactMethod,
+    service: service,
+    message: message
+})
                 }
             );
 
