@@ -40,13 +40,13 @@ if (form) {
                         "Prefer": "return=minimal"
                     },
                     body: JSON.stringify({
-    full_name: name,
-    email: email,
-    phone: phone,
-    contact_method: contactMethod,
-    service: service,
-    message: message
-})
+                        full_name: name,
+                        email: email,
+                        phone: phone,
+                        contact_method: contactMethod,
+                        service: service,
+                        message: message
+                    })
                 }
             );
 
@@ -58,7 +58,7 @@ if (form) {
             form.reset();
 
             formMessage.textContent =
-                "Your service request has been submitted successfully. We will get back to you by email.";
+                "Your service request has been submitted successfully. We will get back to you using your preferred contact method.";
 
             formMessage.className = "form-message success";
 
