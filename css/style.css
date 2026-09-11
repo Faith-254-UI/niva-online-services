@@ -31,13 +31,13 @@ header {
     align-items: center;
 }
 
-/* Logo wrapper */
 .logo {
     width: 180px;
     height: auto;
+    display: flex;
+    align-items: center;
 }
 
-/* Actual logo image */
 .logo img {
     width: 180px;
     height: auto;
@@ -111,7 +111,6 @@ header {
     flex-wrap: wrap;
 }
 
-/* General button */
 .btn {
     display: inline-block;
     padding: 12px 25px;
@@ -127,7 +126,6 @@ header {
     background-color: #ffca0a;
 }
 
-/* Hero primary button */
 .hero-buttons .btn-primary {
     background-color: #ffd43b;
     color: #222;
@@ -137,7 +135,6 @@ header {
     background-color: #ffca0a;
 }
 
-/* Hero secondary button */
 .hero-buttons .btn-secondary {
     background-color: white;
     color: #0b3d91;
@@ -147,7 +144,6 @@ header {
     background-color: #f1f1f1;
 }
 
-/* Hero image */
 .hero-visual {
     flex: 1;
     max-width: 650px;
@@ -830,7 +826,6 @@ footer {
 
 @media (max-width: 768px) {
 
-    /* Navigation */
     .navbar {
         flex-direction: column;
         gap: 15px;
@@ -842,13 +837,11 @@ footer {
         gap: 10px;
     }
 
-    /* Logo */
     .logo img {
         width: 170px;
         margin: 0 auto;
     }
 
-    /* Hero */
     .hero {
         min-height: auto;
         padding: 60px 20px;
@@ -885,12 +878,10 @@ footer {
         width: 100%;
     }
 
-    /* Introduction */
     .intro h2 {
         font-size: 28px;
     }
 
-    /* Homepage services */
     .home-services {
         padding: 50px 20px;
     }
@@ -904,7 +895,6 @@ footer {
         max-width: 400px;
     }
 
-    /* How it works */
     .how-it-works {
         padding: 50px 20px;
     }
@@ -914,12 +904,10 @@ footer {
         max-width: 400px;
     }
 
-    /* Homepage CTA */
     .home-cta h2 {
         font-size: 27px;
     }
 
-    /* Services page */
     .service-section {
         padding: 45px 20px;
     }
@@ -941,7 +929,6 @@ footer {
         max-width: 400px;
     }
 
-    /* Pricing page */
     .pricing-section {
         padding: 45px 20px;
     }
@@ -958,4 +945,8 @@ footer {
         width: 100%;
         max-width: 400px;
     }
+}
+/* Center buttons in the homepage CTA */
+.home-cta .hero-buttons {
+    justify-content: center;
 }
