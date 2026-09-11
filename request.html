@@ -38,7 +38,8 @@
             <h1>Request a Service</h1>
 
             <p>
-                Tell us what you need and we will get back to you by email.
+                Tell us what you need and we will get back to you using
+                your preferred contact method.
             </p>
 
         </section>
@@ -93,49 +94,65 @@
 
                 <div class="form-group">
 
-                    <label for="phone">Phone Number</label>
+                    <label for="phone">Phone / WhatsApp Number</label>
 
                     <input
                         type="tel"
                         id="phone"
                         name="phone"
-                        placeholder="Enter your phone number"
+                        placeholder="Enter your phone or WhatsApp number"
                         required
                     >
 
                 </div>
+
+
                 <div class="form-group">
 
-    <label for="contact-method">Preferred Contact Method</label>
+                    <label for="contact-method">
+                        Preferred Contact Method
+                    </label>
 
-    <select id="contact-method" name="contact_method" required>
+                    <select
+                        id="contact-method"
+                        name="contact_method"
+                        required
+                    >
 
-        <option value="">-- Select a contact method --</option>
+                        <option value="">
+                            -- Select a contact method --
+                        </option>
 
-        <option value="Email">
-            Email
-        </option>
+                        <option value="Email">
+                            Email
+                        </option>
 
-        <option value="Phone Call">
-            Phone Call
-        </option>
+                        <option value="WhatsApp">
+                            WhatsApp
+                        </option>
 
-        <option value="Either">
-            Either
-        </option>
+                        <option value="Either">
+                            Either
+                        </option>
 
-    </select>
+                    </select>
 
-</div>
+                </div>
 
 
                 <div class="form-group">
 
                     <label for="service">Select a Service</label>
 
-                    <select id="service" name="service" required>
+                    <select
+                        id="service"
+                        name="service"
+                        required
+                    >
 
-                        <option value="">-- Select a service --</option>
+                        <option value="">
+                            -- Select a service --
+                        </option>
 
                         <option value="cv-creation">
                             CV Creation
@@ -147,26 +164,6 @@
 
                         <option value="cover-letter">
                             Cover Letter
-                        </option>
-
-                        <option value="job-application">
-                            Job Application Assistance
-                        </option>
-
-                        <option value="online-application">
-                            Online Application
-                        </option>
-
-                        <option value="online-form">
-                            Online Form Filling
-                        </option>
-
-                        <option value="ecitizen">
-                            eCitizen Assistance
-                        </option>
-
-                        <option value="kra">
-                            KRA Assistance
                         </option>
 
                         <option value="typing">
@@ -191,10 +188,6 @@
 
                         <option value="website-updates">
                             Website Updates
-                        </option>
-
-                        <option value="website-maintenance">
-                            Website Maintenance
                         </option>
 
                     </select>
@@ -223,12 +216,15 @@
                     Submit Request
                 </button>
 
+
                 <p class="form-note">
                     Please do not include passwords, PINs, OTPs or other
                     confidential login information in this form.
                 </p>
 
             </form>
+
+
             <div id="form-message" class="form-message"></div>
 
         </section>
